@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Athletics | Премиальное спортивное снаряжение</title>
+    <meta name="description" content="Apex Athletics - высокотехнологичное и премиальное спортивное снаряжение для профессиональных спортсменов и любителей фитнеса.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Header Navigation -->
+    <header class="main-header" id="header">
+        <div class="header-container">
+            <a href="#" class="logo-brand">
+                <span class="logo-accent">APEX</span> ATHLETICS
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#hero" class="nav-link active">Главная</a>
+                <a href="#catalog" class="nav-link">Каталог</a>
+                <a href="#benefits" class="nav-link">Преимущества</a>
+                <a href="#reviews" class="nav-link">Отзывы</a>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Search Bar -->
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Поиск снаряжения...">
+                    <i data-lucide="search" class="search-icon"></i>
+                </div>
+
+                <!-- Dark Mode Toggle -->
+                <button class="theme-toggle" id="themeToggleBtn" aria-label="Переключить тему">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+
+                <!-- Cart Trigger -->
+                <button class="cart-trigger" id="cartTriggerBtn" aria-label="Открыть корзину">
+                    <i data-lucide="shopping-bag"></i>
+                    <span class="cart-badge" id="cartCountBadge">0</span>
+                </button>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-nav-toggle" id="mobileNavToggleBtn" aria-label="Открыть меню">
+                    <i data-lucide="menu" class="menu-open-icon"></i>
+                    <i data-lucide="x" class="menu-close-icon hidden"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div class="mobile-menu" id="mobileMenuDropdown">
+        <a href="#hero" class="mobile-nav-link">Главная</a>
+        <a href="#catalog" class="mobile-nav-link">Каталог</a>
+        <a href="#benefits" class="mobile-nav-link">Преимущества</a>
+        <a href="#reviews" class="mobile-nav-link">Отзывы</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-bg" style="background-image: linear-gradient(180deg, rgba(10, 12, 16, 0.4) 0%, rgba(10, 12, 16, 0.95) 100%), url('assets/hero_bg.jpg');"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-tagline">ТЕХНОЛОГИИ НА СЛУЖБЕ СПОРТА</span>
+                <h1 class="hero-title">ЭКИПИРОВКА <br><span class="text-neon-cyan">НОВОГО ПОКОЛЕНИЯ</span></h1>
+                <p class="hero-desc">Премиальное спортивное снаряжение для тех, кто не признает компромиссов. Раздвигайте границы возможного вместе с Apex Athletics.</p>
+                <div class="hero-buttons">
+                    <a href="#catalog" class="btn btn-primary">В каталог <i data-lucide="arrow-right"></i></a>
+                    <a href="#benefits" class="btn btn-secondary">Подробнее</a>
+                </div>
+            </div>
+            <div class="hero-stats-panel">
+                <div class="stat-card">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Премиум качество</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Поддержка атлетов</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">3 года</span>
+                    <span class="stat-label">Гарантии на весь инвентарь</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section" id="benefits">
+        <div class="section-container">
+            <div class="section-header text-center">
+                <h2 class="section-title">ПОЧЕМУ ВЫБИРАЮТ <span class="text-neon-green">APEX</span></h2>
+                <p class="section-subtitle">Мы объединили передовые научные исследования и премиальные материалы.</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon-wrapper cyan-glow">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+                    <h3>Аэрокосмический уровень</h3>
+                    <p>Использование титана, углеродного волокна (карбона) и сверхпрочных полимеров для максимальной надежности.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon-wrapper green-glow">
+                        <i data-lucide="zap"></i>
+                    </div>
+                    <h3>Смарт-интеграция</h3>
+                    <p>Встроенные сенсоры синхронизируются с вашими устройствами, отслеживая биометрические показатели в реальном времени.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon-wrapper purple-glow">
+                        <i data-lucide="heart"></i>
+                    </div>
+                    <h3>Эргономика движения</h3>
+                    <p>Проектируется при участии профессиональных ортопедов и спортивных врачей для предотвращения травм.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="catalog-section" id="catalog">
+        <div class="section-container">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">ИННОВАЦИОННЫЙ <span class="text-neon-cyan">КАТАЛОГ</span></h2>
+                    <p class="section-subtitle">Выберите оборудование под ваши персональные спортивные цели</p>
+                </div>
+                <!-- Search & Filters Container -->
+                <div class="catalog-controls">
+                    <div class="filter-tabs" id="categoryFilterTabs">
+                        <button class="filter-tab active" data-category="all">Все товары</button>
+                        <button class="filter-tab" data-category="wearables">Гаджеты</button>
+                        <button class="filter-tab" data-category="footwear">Обувь</button>
+                        <button class="filter-tab" data-category="strength">Силовые</button>
+                        <button class="filter-tab" data-category="accessories">Аксессуары</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Dynamically populated via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section" id="reviews">
+        <div class="section-container">
+            <div class="section-header text-center">
+                <h2 class="section-title">ОТЗЫВЫ НАШИХ <span class="text-neon-green">АТЛЕТОВ</span></h2>
+                <p class="section-subtitle">Мнения тех, кто уже перешел на новый уровень тренировок</p>
+            </div>
+            
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-user-info">
+                            <span class="user-name">Александр К.</span>
+                            <span class="user-role">Кроссфит-атлет</span>
+                        </div>
+                        <div class="review-stars">
+                            <i data-lucide="star" class="star-filled"></i>
+                            <i data-lucide="star" class="star-filled"></i>
+                            <i data-lucide="star" class="star-filled"></i>
+                            <i data-lucide="star" class="star-filled"></i>
+                            <i data-lucide="star" class="star-filled"></i>
+                        </div>
+                    </div>
+                    <p class="review-text">«Гантели Titan — это лучшее приобретение для домашнего зала. Механизм регулировки веса работает идеально. Сэкономлено куча места и времени на смену дисков!»</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-user-info">
+                            <span class="user-name">Мария С.</span>
+                            <span class="user-role">Марафонец</span>
+                        </div>
+                        <div class="review-stars">
+                            <i data-lucide="star" class="star-filled"></i>
+                            <i data-lucide="star" class="star-filled"></i>
+                            <i data-lucide="star" class="star-filled"></i>
+                            <i data-lucide="star" class="star-filled"></i>
+                            <i data-lucide="star" class="star-filled"></i>
+                        </div>
+                    </div>
+                    <p class="review-text">«Кроссовки NeonPulse буквально толкают вперед. Амортизация на высшем уровне, суставы больше не болят после длительных пробежек по асфальту.»</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-user-info">
+                            <span class="user-name">Елена Д.</span>
+                            <span class="user-role">Фитнес-тренер</span>
+                        </div>
+                        <div class="review-stars">
+                            <i data-lucide="star" class="star-filled"></i>
+                            <i data-lucide="star" class="star-filled"></i>
+                            <i data-lucide="star" class="star-filled"></i>
+                            <i data-lucide="star" class="star-filled"></i>
+                            <i data-lucide="star"></i>
+                        </div>
+                    </div>
+                    <p class="review-text">«Часы Apex Chrono стали моим незаменимым ассистентом. Точность датчика пульса проверила нагрудным ремнем — расхождения минимальные. Выглядят космически!»</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom Newsletter Call-to-action -->
+    <section class="newsletter-section">
+        <div class="newsletter-container">
+            <div class="newsletter-info">
+                <h3>ПРИСОЕДИНЯЙТЕСЬ К НАШЕМУ КЛУБУ</h3>
+                <p>Подпишитесь на рассылку и получайте эксклюзивные тренировки от топ-тренеров, закрытые распродажи и скидку 10% на первый заказ.</p>
+            </div>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" placeholder="Ваш Email адрес" required>
+                <button type="submit" class="btn btn-primary">Подписаться</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand-info">
+                <a href="#" class="logo-brand">
+                    <span class="logo-accent">APEX</span> ATHLETICS
+                </a>
+                <p class="footer-desc">Создаем будущее спортивной индустрии уже сегодня. Доставка по всей стране и гарантия премиального качества.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Telegram"><i data-lucide="send"></i></a>
+                    <a href="#" aria-label="Youtube"><i data-lucide="youtube"></i></a>
+                    <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links-group">
+                <h4>Разделы</h4>
+                <a href="#hero">Главная</a>
+                <a href="#catalog">Каталог</a>
+                <a href="#benefits">Преимущества</a>
+                <a href="#reviews">Отзывы</a>
+            </div>
+
+            <div class="footer-links-group">
+                <h4>Клиентам</h4>
+                <a href="#">Оплата и доставка</a>
+                <a href="#">Обмен и возврат</a>
+                <a href="#">Сервисный центр</a>
+                <a href="#">Клубные привилегии</a>
+            </div>
+
+            <div class="footer-links-group">
+                <h4>Контакты</h4>
+                <p><i data-lucide="phone" class="footer-icon"></i> 8 (800) 555-35-35</p>
+                <p><i data-lucide="mail" class="footer-icon"></i> support@apexathletics.com</p>
+                <p><i data-lucide="map-pin" class="footer-icon"></i> Москва, Кутузовский пр-т, 12</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Apex Athletics. Все права защищены. Разработано с помощью Google Antigravity.</p>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Drawer (Sidebar) -->
+    <div class="cart-drawer-overlay" id="cartDrawerOverlay"></div>
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-drawer-header">
+            <h3>ВАША КОРЗИНА (<span id="cartHeaderCount">0</span>)</h3>
+            <button class="cart-close-btn" id="cartCloseBtn" aria-label="Закрыть корзину">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        
+        <div class="cart-items-container" id="cartItemsList">
+            <!-- Dynamically populated via JS -->
+            <div class="cart-empty-state">
+                <i data-lucide="shopping-bag" class="empty-cart-icon"></i>
+                <p>Ваша корзина пуста</p>
+                <button class="btn btn-secondary" id="cartEmptyContinueShopping">Перейти к покупкам</button>
+            </div>
+        </div>
+        
+        <div class="cart-drawer-footer" id="cartDrawerFooter">
+            <div class="cart-price-summary">
+                <div class="summary-row">
+                    <span>Подытог:</span>
+                    <span id="cartSubtotal">0 ₽</span>
+                </div>
+                <div class="summary-row">
+                    <span>Доставка:</span>
+                    <span class="text-free" id="cartShipping">БЕСПЛАТНО</span>
+                </div>
+                <div class="summary-row total-row">
+                    <span>Итого к оплате:</span>
+                    <span id="cartGrandTotal">0 ₽</span>
+                </div>
+            </div>
+            
+            <button class="btn btn-primary btn-block" id="checkoutBtn">Оформить заказ</button>
+        </div>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div class="modal-overlay" id="productModalOverlay">
+        <div class="product-modal">
+            <button class="modal-close-btn" id="modalCloseBtn" aria-label="Закрыть">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="modal-content-grid" id="modalContentBody">
+                <!-- Dynamically populated via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal-overlay" id="checkoutModalOverlay">
+        <div class="checkout-modal">
+            <button class="modal-close-btn" id="checkoutModalCloseBtn" aria-label="Закрыть">
+                <i data-lucide="x"></i>
+            </button>
+            
+            <div class="checkout-flow-container" id="checkoutFormStep">
+                <h3 class="checkout-title">Оформление заказа</h3>
+                
+                <form id="orderForm" class="checkout-form">
+                    <div class="form-group">
+                        <label for="orderName">ФИО получателя *</label>
+                        <input type="text" id="orderName" required placeholder="Константинопольский Константин">
+                    </div>
+                    
+                    <div class="form-group-row">
+                        <div class="form-group">
+                            <label for="orderPhone">Телефон *</label>
+                            <input type="tel" id="orderPhone" required placeholder="+7 (999) 999-99-99">
+                        </div>
+                        <div class="form-group">
+                            <label for="orderEmail">Email *</label>
+                            <input type="email" id="orderEmail" required placeholder="constantine@example.com">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="orderAddress">Адрес доставки *</label>
+                        <input type="text" id="orderAddress" required placeholder="г. Москва, ул. Ленина, д. 10, кв. 25">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Способ оплаты</label>
+                        <div class="payment-options">
+                            <label class="payment-option-card active">
+                                <input type="radio" name="paymentMethod" value="card" checked>
+                                <span class="option-content">
+                                    <i data-lucide="credit-card"></i>
+                                    Картой онлайн
+                                </span>
+                            </label>
+                            <label class="payment-option-card">
+                                <input type="radio" name="paymentMethod" value="cash">
+                                <span class="option-content">
+                                    <i data-lucide="banknote"></i>
+                                    При получении
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">Подтвердить заказ</button>
+                </form>
+            </div>
+            
+            <!-- Success step -->
+            <div class="checkout-success-container hidden" id="checkoutSuccessStep">
+                <div class="success-icon-wrapper">
+                    <i data-lucide="check-circle-2"></i>
+                </div>
+                <h2>ЗАКАЗ УСПЕШНО ОФОРМЛЕН!</h2>
+                <p>Спасибо за ваш заказ. Наш менеджер уже связывается с вами для подтверждения доставки.</p>
+                <div class="order-summary-box">
+                    <p>Номер вашего заказа: <span class="order-id-highlight" id="orderIdLabel">#APX-1294</span></p>
+                    <p>Сумма к оплате: <span id="successTotalLabel">0 ₽</span></p>
+                </div>
+                <button class="btn btn-primary" id="successCloseBtn">Вернуться в магазин</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notifications Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
